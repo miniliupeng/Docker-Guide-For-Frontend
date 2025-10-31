@@ -1,0 +1,6 @@
+# Ignore dependencies and build output
+node_modules
+dist
+.env*
+.DS_Store
+npm-debug.log*
