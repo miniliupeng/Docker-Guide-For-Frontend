@@ -1,0 +1,23 @@
+{
+  "name": "docker-guide-for-frontend",
+  "version": "1.0.0",
+  "description": "An expert-level Docker tutorial for frontend developers.",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "docker",
+    "frontend",
+    "tutorial",
+    "guide",
+    "devops"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

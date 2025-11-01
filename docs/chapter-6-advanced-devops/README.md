@@ -67,7 +67,7 @@ jobs:
     -   `uses: actions/checkout@v4`: 这是一个官方的 Action，用于检出你的仓库代码到虚拟机中。
     -   `docker/setup-qemu-action` 和 `docker/setup-buildx-action`: 这两个 Action 设置了 Docker Buildx，它是一个更现代、功能更强大的构建器，支持多平台构建和更优的缓存管理。
     -   `docker/login-action`: 用于登录到 Docker Hub。`with` 关键字用来传递参数。
-        -   `username` 和 `password`: 我们使用了 `${{ secrets. ... }}` 语法来安全地引用预先配置好的**加密机密**，避免将敏感信息硬编码在代码中。
+        -   `username` 和 `password`: 我们使用了 `$&#123;&#123; secrets. ... &#125;&#125;` 语法来安全地引用预先配置好的**加密机密**，避免将敏感信息硬编码在代码中。
     -   `docker/build-push-action`: 这是核心步骤，用于构建和推送镜像。
         -   `context`: 指定 `Dockerfile` 所在的构建上下文目录。
         -   `push: true`: 告诉 Action 在构建成功后将镜像推送到仓库。
