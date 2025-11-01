@@ -43,3 +43,19 @@
 | “数据卷 (Volume) 和绑定挂载 (Bind Mount) 有什么区别？分别在什么场景下使用？” | **[第四章：深入原理 - Docker 的“引擎室”](./../chapter-4-internals/README.md)** |
 | (高阶) “为什么 `Dockerfile` 里推荐用 `CMD ["npm", "start"]` 而不是 `CMD npm start`？” | **[第四章：深入原理 - Docker 的“引擎室”](./../chapter-4-internals/README.md)** (核心：PID 1 与信号处理) |
 | (高阶) “`docker build` 的缓存是怎么工作的？” | **[第四章：深入原理 - Docker 的“引擎室”](./../chapter-4-internals/README.md)** (核心：镜像层与构建缓存) |
+
+---
+
+## 第四轮：编排与 DevOps 问题
+
+> 面试官的目标：评估你是否具备将 Docker 应用于真实、复杂项目以及自动化流程的能力。
+
+| 常见面试问题 | 答案索引 |
+| :--- | :--- |
+| “你用过 Docker Compose 吗？它解决了什么问题？” | **[第五章：使用 Docker Compose 编排多容器应用](./../chapter-5-docker-compose/README.md)** |
+| “在 `docker-compose.yml` 中，`build` 和 `image` 有什么区别？” | **[第五章：使用 Docker Compose 编排多容器应用](./../chapter-5-docker-compose/README.md)** |
+| “`depends_on` 能保证被依赖的服务完全就绪吗？如果不能，有什么方案？” | **[第五章：使用 Docker Compose 编排多容器应用](./../chapter-5-docker-compose/README.md)** (核心：`healthcheck`) |
+| “你是如何将 Docker 集成到项目的 CI/CD 流程中的？” | **[第六章：高级 DevOps - 自动化 CI/CD](./../chapter-6-advanced-devops/README.md)** |
+| “在 CI/CD 脚本中，你是如何安全地处理 Docker Hub 的登录凭证的？” | **[第六章：高级 DevOps - 自动化 CI/CD](./../chapter-6-advanced-devops/README.md)** (核心：`secrets`) |
+| “你了解 Kubernetes (K8s) 吗？它和 Docker Compose 有什么核心区别？” | **[第七章：初探容器编排 - Kubernetes 入门](./../chapter-7-kubernetes-intro/README.md)** |
+| (高阶) “请用一个简单的比喻，解释一下 K8s 的 Pod, Service, Deployment 是什么？” | **[第七章：初探容器编排 - Kubernetes 入门](./../chapter-7-kubernetes-intro/README.md)** |

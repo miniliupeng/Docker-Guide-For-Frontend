@@ -27,7 +27,7 @@ docker run -d -p 8080:3000 --name my-vite-app -v "$(pwd)/src":/app/src --network
 
 **Docker Compose** 正是为了解决这些问题而生的。它允许我们使用一个 `YAML` 文件，以**声明式**的方式定义整个应用的服务、网络和数据卷。
 
-你可以将 `docker-compose.yml` 文件想象成整个应用的“架构蓝图”或“启动手册”。它清晰、可读、易于版本控制，并且能让你用一个简单的命令，如 `docker-compose up`，来启动、管理和停止整个应用栈。
+你可以将 `docker-compose.yml` 文件想象成整个应用的“架构蓝图”或“启动手册”。它清晰、可读、易于版本控制，并且能让你用一个简单的命令，如 `docker compose up`，来启动、管理和停止整个应用栈。
 
 ## 5.2 场景准备：构建一个真实的全栈应用环境
 
@@ -156,7 +156,7 @@ services:
 <details>
 <summary><b>附录：<code>docker-compose.yml</code> 核心指令详解 (点击展开)</b></summary>
 
-为了让您更深入地掌握 `docker-compose`，我们来详细解析一下 `docker-compose.yml` 文件中一些最核心、最常用的指令。
+为了让您更深入地掌握 `docker compose`，我们来详细解析一下 `docker-compose.yml` 文件中一些最核心、最常用的指令。
 
 #### 顶级元素 (Top-level Elements)
 
@@ -251,16 +251,16 @@ services:
 万事俱备！现在，我们只需要在 `project` 目录下运行一个命令，即可启动所有服务：
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
-- **`docker-compose up`**: 启动并运行整个应用。
+- **`docker compose up`**: 启动并运行整个应用。
 - **`--build`**: 在启动前强制重新构建镜像，当我们修改了代码或 `Dockerfile` 时使用。
 
 应用启动后，你可以使用以下命令来管理：
 
-- **`docker-compose ps`**: 查看所有服务的当前状态。
-- **`docker-compose logs <service_name>`**: 查看特定服务的日志。
-- **`docker-compose down`**: 停止并**移除**所有相关的容器和网络。
+- **`docker compose ps`**: 查看所有服务的当前状态。
+- **`docker compose logs <service_name>`**: 查看特定服务的日志。
+- **`docker compose down`**: 停止并**移除**所有相关的容器和网络。
 
 现在，访问 `http://localhost:8080`，点击按钮，你将看到前后端成功通信的画面！这标志着你已经掌握了现代 Web 应用容器化编排的核心技能。

@@ -22,8 +22,11 @@
 - **[第五章：服务编排 - Docker Compose 实战](./chapter-5-docker-compose/README.md)**
   - *使用 `docker-compose` 和 Nginx 组织前端、后端与反向代理。*
 
-- **[第六章：更进一步 - Docker 与前端 DevOps](./chapter-6-advanced-devops/README.md)**
-  - *Dev Containers, CI/CD 集成, 以及更多生产环境技巧。*
+- **[第六章：高级 DevOps - 自动化 CI/CD](./chapter-6-advanced-devops/README.md)**
+  - *将 Docker 集成到 GitHub Actions，实现自动化镜像构建与发布。*
+
+- **[第七章：初探容器编排 - Kubernetes 入门](./chapter-7-kubernetes-intro/README.md)**
+  - *了解 K8s 的核心概念，以及你的 Docker 镜像如何在 K8s 集群中运行。*
 
 - **[附录：常用命令速查表](./appendix/cheatsheet.md)**
   - *一份核心命令的快速参考。*
@@ -36,5 +39,14 @@
 
 ## 总结
 
-- 回顾所学知识
-- 下一步学习建议
+恭喜你完成了这本教程！通过这七章的学习，你已经：
+
+-   掌握了 Docker 的核心概念与架构。
+-   能够为任何现代前端应用编写生产级的 `Dockerfile`。
+-   学会了多阶段构建、缓存优化、使用 Nginx 等高级技巧。
+-   深入理解了 Docker 的网络、存储和进程管理机制。
+-   能够使用 Docker Compose 编排复杂的多容器应用。
+-   成功地将 Docker 集成到 CI/CD 流程，实现了自动化交付。
+-   初步了解了 Kubernetes 的工作原理，为云原生开发奠定了基础。
+
+你已经具备了将 Docker 应用于前端开发全生命周期的专业技能，并对容器化技术的未来发展方向有了清晰的认识。希望本教程能成为你通往更广阔的工程世界的一块坚实基石。祝学习愉快！

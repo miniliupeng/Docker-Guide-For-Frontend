@@ -1,0 +1,21 @@
+{
+  "name": "Docker Guide - Chapter 5",
+  "dockerComposeFile": ["../docker-compose.yml", "../docker-compose.dev.yml"],
+  "service": "frontend",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "eamodio.gitlens",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+    }
+  },
+  "forwardPorts": [3000, 8080],
+  "postCreateCommand": "pnpm install"
+}
