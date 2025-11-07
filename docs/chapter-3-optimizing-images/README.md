@@ -2,12 +2,10 @@
 
 本章你将学习：
 
-- 减小镜像体积的重要性
-- 使用 `.dockerignore` 文件
-- 多阶段构建 (Multi-stage builds) 的威力
-- 缓存 `node_modules` 以加速构建
-- 理解镜像层 (Image Layers)
-- 选择合适的基础镜像 (e.g., `node:alpine`)
+- 理解优化镜像体积的重要性
+- 深入掌握多阶段构建 (Multi-stage builds)
+- 利用构建缓存加速构建的最佳实践
+- 生产环境镜像的考量 (e.g., 使用 Nginx)
 
 ---
 
